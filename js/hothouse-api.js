@@ -82,7 +82,7 @@ $(document).ready(function(){
         // Feature detection for CORS
         if ('withCredentials' in reqPUT) {
             var data = "value=15";
-            reqPUT.open('PUT', 'http://ivelinah.ddns.net/controls' + name);
+            reqPUT.open('PUT', 'http://ivelinah.ddns.net/controls/' + name);
             // Just like regular ol' XHR
             reqPUT.onreadystatechange = function() {
                 if (reqPUT.readyState === 4) {
